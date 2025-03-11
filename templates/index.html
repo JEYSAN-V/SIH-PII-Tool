@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>PII Detection Application</title>
+    <link rel="stylesheet" href="{{ url_for('static', filename='styles.css') }}">
+</head>
+<body>
+    <header>
+        <nav class="nav-bar">
+            <ul>
+                <li><a href="{{ url_for('index') }}" class="nav-link">Home</a></li>
+                <li><a href="{{ url_for('about') }}" class="nav-link">About</a></li>
+                <li><a href="#" class="nav-link">Contact</a></li>
+            </ul>
+        </nav>
+    </header>
+    <main class="main-container">
+        <section class="upload-section">
+            <h1 class="section-title">Upload Document or Input Data</h1>
+            <form id="upload-form" enctype="multipart/form-data" data-upload-url="{{ url_for('upload_file') }}">
+                <input type="file" name="file" id="file-upload" class="file-input" placeholder="J" />
+                <button type="submit" id="upload-btn" class="btn btn-primary">Upload</button>
+            </form>
+            <p id="upload-status" class="status-message"></p>
+        </section>
+        <section class="scan-section">
+            <h1 class="section-title">Scan for PII</h1>
+            <button id="scan-btn" class="btn btn-secondary">Scan</button>
+            <p id="scan-status" class="status-message"></p>
+        </section>
+        <section class="results-section">
+            <h1 class="section-title">PII Detection Results</h1>
+            <ul id="pii-results" class="results-list"></ul>
+        </section>
+        <section class="document-viewer-section">
+            <h1 class="section-title">Document Viewer</h1>
+            <div id="document-viewer" class="document-viewer"></div>
+        </section>
+    </main>
+    <div id="notification" class="notification"></div>
+    <script src="{{ url_for('static', filename='script.js') }}"></script>
+</body>
+</html>

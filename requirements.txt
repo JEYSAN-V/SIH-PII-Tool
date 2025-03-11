@@ -1,0 +1,4 @@
+flask==3.0.2
+presidio-analyzer==2.2.351
+werkzeug==3.0.1
+spacy>=3.0.0,<4.0.0 

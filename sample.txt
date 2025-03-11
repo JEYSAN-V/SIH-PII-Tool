@@ -1,0 +1,25 @@
+Name: "John Doe"
+
+Email: "johndoe@example.com"
+
+Phone Number: "+1-123-456-7890"
+
+Social Security Number: "123-45-6789" (for formats)
+
+Address: "123 Elm Street, Springfield, IL"
+
+Passport Number: "X1234567"
+
+Bank Account Number: "0123456789"
+
+Transaction Amounts: "$250"
+
+Product ID: "AB12345"
+
+ZIP Code (without other linked data): "90210"
+
+Time Stamp: "2025-03-10 16:02:00"
+
+Browser Type: "Chrome 99.0"
+
+Device Model: "Samsung Galaxy S22"

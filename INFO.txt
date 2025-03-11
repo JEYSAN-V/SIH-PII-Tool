@@ -1,0 +1,11 @@
+my_flask_app/
+│
+├── app.py
+├── uploads/
+│   └── (uploaded files will be stored here)
+├── static/
+│   ├── styles.css
+│   └── script.js
+└── templates/
+    ├── index.html
+    └── about.html
